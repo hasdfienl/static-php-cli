@@ -124,7 +124,8 @@ jobs:
               RUNS_ON="ubuntu-24.04-arm"
               ;;
             linux-x86_64-glibc)
-              DOWN_CMD="./bin/spc-gnu-docker download && apk add pkgconf"
+              -doctor
+              DOWN_CMD="./bin/spc-gnu-docker download && dockor"
               BUILD_CMD="./bin/spc-gnu-docker build && apk add pkgconf"
               RUNS_ON="ubuntu-22.04"
               ;;
